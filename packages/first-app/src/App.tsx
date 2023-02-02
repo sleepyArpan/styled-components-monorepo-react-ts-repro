@@ -1,7 +1,13 @@
-import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import theme from './theme';
+import { Wrapper } from './App.styled';
 
 function App() {
-  return <div>Hello World from first app</div>;
+  return (
+    <ThemeProvider theme={theme}>
+      <Wrapper>Hello World from first app</Wrapper>
+    </ThemeProvider>
+  );
 }
 
 export default App;
